@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(208,227,248);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    div {
+        * {
+            margin: .5rem;
+            cursor: pointer;
+            color: rgb(124, 121, 121); 
+        }
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        a {
+            font-family: inherit;
+            background-color: inherit;
+            font-size: 15px;
+            text-decoration: none;
+            &:hover {
+                color: rgb(231,158,109);
+            } 
+        }
+        img {
+            width: 80px;
+            margin: 1rem auto;
+            filter: grayscale(100);
+        }
+    }  
+}

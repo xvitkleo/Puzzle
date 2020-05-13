@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="up-side">
+            <div class="hud">
+                <div>
+                    <p>Time: </p>
+                    <p class="time"></p>
+                </div>
+                <div>
+                    <p>Moves: </p>
+                    <p class="moves"></p>                    
+                </div>
+            </div>
+            <div class="big-pieces">
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+                <div class="big-piece_container"></div>
+            </div>
+        </div>
+        <div class="down-side">
+            <div class="down-side_top">
+                <div class="small-pieces">
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                    <div class="small-piece_container"></div>
+                </div>                              
+            </div>
+            <div class="down-side_bot">
+                <label class='selectImg' for="file">
+                    <p>SELECT IMAGE</p>
+                    <input type="file" id="file"/>
+                </label>                
+                <button class="restart">RESTART</button>
+                <a href="../menu/index.html" class="return"><p>RETURN</p></a>
+
+            </div>
+        </div>
+    </div>    
+    
+    <div class="modal">
+        <div class="modal-inner">
+            <header class="modal-header">            
+                <button class='times'>X</button>
+            </header>
+            <div class="modal-body">
+                <p class="modal-message"></p>
+            </div>
+            <footer class="modal-footer">
+                <button class='accept'>Accept</button>
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

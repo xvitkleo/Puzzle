@@ -1,0 +1,113 @@
+body {
+  background-color: #d0e3f8;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Press Start 2P', cursive;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.container .content * {
+  color: #7c7979;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.container .content h1, .container .content a, .container .content .arrow {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .content a, .container .content .arrow {
+  font-family: inherit;
+  background-color: inherit;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.container .content a:hover, .container .content .arrow:hover {
+  color: #e79e6d;
+}
+
+.container .content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content div img {
+  width: 200px;
+  height: 200px;
+}
+
+.slide {
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slide .slideContent {
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-animation: academic_info_appear .8s ease forwards;
+          animation: academic_info_appear .8s ease forwards;
+}
+
+@-webkit-keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+/*# sourceMappingURL=instructions.css.map */

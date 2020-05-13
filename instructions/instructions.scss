@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(208,227,248);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Press Start 2P', cursive;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .content {        
+        display: flex;
+        flex-flow: column;
+        * {
+            color: rgb(124, 121, 121); 
+            cursor: pointer;
+            margin: 1rem;
+        } 
+        h1, a, .arrow {
+            text-align: center;
+            align-self: center;
+        }                 
+        a, .arrow{
+            font-family: inherit;
+            background-color: inherit;
+            font-size: 15px;
+            text-decoration: none;
+            &:hover {
+                color: rgb(231,158,109);
+            }
+        }
+          
+        div {
+            display: flex;
+            align-items: center;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+    }
+}
+
+.slide {          
+    text-align: center;
+    justify-content: space-around;
+    .slideContent {
+        clip-path: inset(0 0 0 100%);
+        animation: academic_info_appear .8s ease forwards;
+    }
+}
+
+@keyframes academic_info_appear{
+    from {
+        clip-path: inset(0 0 0 100%);
+        transform: translate(100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0%);
+        transform: translate(0%);
+    }
+}
