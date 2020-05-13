@@ -1,7 +1,7 @@
 let instructions = [
-    ["1. Select an image", "./assets/instruction1.PNG"], 
-    ["2. Click the piece you want to move", "./assets/instruction2.PNG"], 
-    ["3. Select the square where <br> you want to leave the piece", "./assets/instruction3.PNG"]
+    ["1. Select an image", "../assets/instruction1.PNG"], 
+    ["2. Click the piece you want to move", "../assets/instruction2.PNG"], 
+    ["3. Select the square where <br> you want to leave the piece", "../assets/instruction3.PNG"]
 ];
 
 var arrow = document.querySelector('.arrow');
